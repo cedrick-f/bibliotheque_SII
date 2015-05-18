@@ -1,0 +1,44 @@
+component gear_box
+% Gear Box
+% The block represents an ideal, non-planetary, fixed gear ratio gear box.
+% The gear box is characterized by its only parameter, Gear ratio, which
+% can be positive or negative. Connections S and O are mechanical
+% rotational conserving ports associated with the box input and
+% output shaft, respectively. The gear ratio is determined as the ratio
+% of the input shaft angular velocity to that of the output shaft.
+%
+% The block generates torque in positive direction if a positive torque
+% is applied to the input shaft and the ratio is assigned a positive value.
+
+% Copyright 2005-2008 The MathWorks, Inc.
+
+  nodes
+    S = foundation.mechanical.rotational.rotational; % S:left
+    O = foundation.mechanical.rotational.rotational; % O:right
+  end
+  
+  parameters
+    ratio = { 5, '1' }; % Gear ratio
+    rendement = { 0.9, '1' }; % Gear ratio
+  end  
+  
+  variables
+    t_in = { 0, 'N*m' };
+    t_out = { 0, 'N*m' };
+  end
+
+  function setup
+    through( t_in, S.t, [] );
+    through( t_out, O.t, [] );
+    % Parameter range checking
+    if ratio == 0
+      pm_error('simscape:NotZero','Gear ratio')
+    end
+  end
+  
+  equations
+    t_out == -ratio * t_in;
+    S.w == ratio * O.w;
+  end
+               
+end

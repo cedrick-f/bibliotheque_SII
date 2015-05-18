@@ -1,0 +1,50 @@
+component roue_libre < foundation.mechanical.rotational.branch
+% Roue libre 
+% La roue libre permet la transmission de la puissance dans un seul sens.
+%
+% La rigidité en mode "bloqué" est donné par ...
+% 
+% Connections R and C are mechanical rotational conserving ports. 
+% The block is oriented from R to C. This means that the block transmits 
+% torque from port R to port C when the gap is closed in the positive
+% direction.
+ 
+   
+  parameters
+    stiff = { 1e6, 'N*m/rad' };      % Raideur du contact
+  end 
+  
+  variables
+    phi = { 0, 'rad'};
+%     phi_p = { 0, 'rad'};    
+  end
+   
+  function setup
+    if stiff < 0
+      pm_error('simscape:GreaterThanOrEqualToZero','Raideur du contact')
+    end
+  end
+    
+  equations       
+      
+      if (w > 0)
+          t == stiff * phi;
+          phi == phi;
+      else
+          t == {0 'N*m'};  
+          phi == {0 'rad'};
+      end
+%     if (phi > phii)
+%         % Slider hits upper bound
+%         t == stiff_up * (phi - phii) + D_up * w;
+%         
+%     else
+%         % Slider is between hard stops
+%         t == {0 'N*m'}; 
+%         
+%     end
+%     phii == phi;
+    phi.der == w;
+  end
+
+end

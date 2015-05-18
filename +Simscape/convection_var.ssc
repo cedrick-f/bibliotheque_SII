@@ -1,0 +1,34 @@
+component convection_var < foundation.thermal.branch
+% Variable convective Heat Transfer
+% The block represents an energy transfer by convection between two
+% bodies by means of fluid motion. The transfer is governed by the Newton
+% law of cooling and is directly proportional to the convection heat 
+% transfer coefficient, surface area, and the temperature difference.
+%
+% Connections A and B are thermal conserving ports associated
+% with the points between which the energy transport by convection takes
+% place. The block positive direction is from port A to port B. This means
+% that the heat flow is positive if it flows from A to B. 
+
+% Copyright 2005-2008 The MathWorks, Inc.
+
+inputs
+    heat_tr_coeff = { 20, 'W/(m^2*K)' }; % Heat transfer coefficient
+end
+
+parameters
+    area = { 1e-4, 'm^2' };              % Area
+end 
+       
+  function setup
+    % Parameter range checking
+    if area <= 0
+      pm_error('simscape:GreaterThanZero','Area')
+    end
+  end
+
+  equations
+    Q == area * heat_tr_coeff * T;
+  end
+
+end
