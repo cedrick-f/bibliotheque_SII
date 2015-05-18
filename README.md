@@ -2,7 +2,7 @@
 Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sciences Industrielles de l'Ingénieur.
 
 ## Installation
- 1 - Télécharger la bibliothèque en cliquant sur "Download ZIP",
+ 1 - Télécharger la bibliothèque en cliquant sur "[Download ZIP](https://github.com/cedrick-f/bibliotheque_SII/archive/master.zip)",
  
  2 - Dézipper le contenu du zip dans un dossier,
  
