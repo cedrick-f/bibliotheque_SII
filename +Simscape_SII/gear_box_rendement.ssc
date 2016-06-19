@@ -1,4 +1,4 @@
-component gear_box
+component gear_box_rendement
 % Gear Box
 % The block represents an ideal, non-planetary, fixed gear ratio gear box.
 % The gear box is characterized by its only parameter, Gear ratio, which
