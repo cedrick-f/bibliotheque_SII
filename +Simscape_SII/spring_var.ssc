@@ -1,5 +1,5 @@
 component spring_var < foundation.mechanical.translational.branch
-% Translational Spring
+% Ressort lineaire (raideur variable)
 % The block represents an ideal mechanical linear spring.
 %
 % Connections R and C are mechanical translational conserving ports. 
@@ -9,7 +9,7 @@ component spring_var < foundation.mechanical.translational.branch
 % Copyright 2005-2013 The MathWorks, Inc.
 
 inputs
-    spr_rate = { 1000, 'N/m' };  % Spring rate
+    spr_rate = { 1000, 'N/m' };  % Raideur
 end
 
 parameters
