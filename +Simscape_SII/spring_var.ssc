@@ -1,12 +1,14 @@
 component spring_var < foundation.mechanical.translational.branch
 % Ressort lineaire (raideur variable)
-% The block represents an ideal mechanical linear spring.
+% Ressort linéaire daont la raideur peut être modifiée dynamiquement.
+% Permet de modéliser la raideur de câbles, courroies, ...
 %
 % Connections R and C are mechanical translational conserving ports. 
 % The block positive direction is from port R to port C. This means that
 % the force is positive if it acts in the direction from R to C.
 
 % Copyright 2005-2013 The MathWorks, Inc.
+% Copyright 2016 Cédrick FAURY
 
 inputs
     spr_rate = { 1000, 'N/m' };  % Raideur

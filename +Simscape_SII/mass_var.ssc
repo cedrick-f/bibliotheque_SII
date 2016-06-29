@@ -1,6 +1,6 @@
 component mass_var
-% Mass
-% The block represents an ideal mechanical translational mass. 
+% Masse variable
+% La valeur de la masse peut varier dynamiquement. 
 %
 % The block has one mechanical translational conserving port. 
 % The block positive direction is from its port to the reference point. 
@@ -8,6 +8,7 @@ component mass_var
 % in positive direction. 
 
 % Copyright 2005-2013 The MathWorks, Inc.
+% Copyright 2016 Cédrick FAURY
 
 nodes
     M = foundation.mechanical.translational.translational; % :top
@@ -22,7 +23,7 @@ parameters
 end
 
 variables
-    v = { 0, 'm/s' };                % Velocity
+    v = { 0, 'm/s' };                % Vitesse
     f = { 0, 'N' };                  % Force
 end
 

@@ -13,7 +13,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="spring_var.svg">
+   sodipodi:docname="embrayage.svg">
   <metadata
      id="metadata22">
     <rdf:RDF>
@@ -38,9 +38,9 @@
      inkscape:window-height="1008"
      id="namedview20"
      showgrid="false"
-     inkscape:zoom="1.0488889"
-     inkscape:cx="240.03223"
-     inkscape:cy="249.88029"
+     inkscape:zoom="1.4833529"
+     inkscape:cx="165.22211"
+     inkscape:cy="87.77457"
      inkscape:window-x="-7"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -96,47 +96,53 @@ stroke-miterlimit: 20;
 }
 ]]></style>
   </defs>
-  <polyline
-     points="4.5,90 58.68,89.7 59.7,89.7"
-     class="sA"
-     id="polyline12"
-     transform="matrix(1.0002271,0,0,0.88732738,-0.0270826,-2.734041)"
-     style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:20" />
-  <polyline
-     points="59.7,89.7 70.92,60.06 91.32,122.4 111.84,60.06 131.28,121.38 151.68,60.06 161.94,89.7 172.14,120.36 182.4,89.7"
-     class="sA"
-     id="polyline14"
-     transform="matrix(1.0002271,0,0,0.88732738,-0.0270826,-2.734041)"
-     style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:20" />
-  <polyline
-     points="182.4,89.7 234,90"
-     class="sA"
-     id="polyline16"
-     transform="matrix(1.0002271,0,0,0.88732738,-0.0270826,-2.734041)"
-     style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:20" />
   <rect
-     x="4.4739394"
-     y="21.251905"
-     width="229.55212"
-     height="143.74702"
+     x="-8.4229679"
+     y="9.4336357"
+     width="247.79547"
+     height="164.14764"
      class="sB"
      id="rect18"
-     style="fill:none;stroke:#ffffff;stroke-width:0.84787875;stroke-miterlimit:20" />
+     style="fill:none;stroke:#ffffff;stroke-width:0.94136417;stroke-miterlimit:20" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:2.14535499;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-     d="M 59.946396,130.68516 182.61368,39.229661"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 132.8,20 -69.6,0 0,144 69.6,0"
+     id="path6767"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 101.88008,32.81478 69.92759,0 0,118.37044 -69.92759,0"
+     id="path6767-9"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.6586628;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 108.80803,92 14.399367,92"
+     id="path6767-5"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 201.17983,92 -69.6,0"
+     id="path6767-5-2"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 106.78511,132.86734 0,-81.734676"
+     id="path6767-5-1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 132.94207,132.86733 0,-81.734662"
+     id="path6767-5-1-7"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="M 63.013119,134.15921 185.6804,42.703719"
      id="path7284"
      inkscape:connector-curvature="0" />
-  <polyline
-     transform="matrix(0,-0.38683388,1.0131686,0,-85.797489,78.473955)"
-     points="4.5,90 58.68,89.7 59.7,89.7"
-     class="sA"
-     id="polyline12-4"
-     style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:20" />
-  <polyline
-     transform="matrix(0,-0.38316782,1.0132875,0,142.28569,99.758368)"
-     points="4.5,90 58.68,89.7 59.7,89.7"
-     class="sA"
-     id="polyline12-4-2"
-     style="fill:none;stroke:#000000;stroke-width:0.89999998;stroke-miterlimit:20" />
 </svg>

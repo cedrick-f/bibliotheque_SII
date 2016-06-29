@@ -34,8 +34,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="984"
+     inkscape:window-height="880"
      id="namedview24"
      showgrid="false"
      inkscape:zoom="0.80683761"
@@ -120,8 +120,8 @@ stroke-miterlimit: 20;
      class="sC"
      id="rect22" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.67999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
-     d="M 137.38135,182.89456 55.694913,64.750499"
+     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Lend)"
+     d="M 144.06847,28.980574 53.142729,202.91255"
      id="path7284"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />

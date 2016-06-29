@@ -3,6 +3,8 @@
 #################
 *.mexw64
 slprj/
+*.pmdlg
+
 
 #################
 ## Eclipse
@@ -220,3 +222,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+

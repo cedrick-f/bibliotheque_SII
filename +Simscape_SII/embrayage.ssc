@@ -1,10 +1,12 @@
 component embrayage < foundation.mechanical.rotational.branch
 % Embrayage
-% The block represents friction in the contact between rotating bodies.
-% The friction force is simulated as a function of relative velocity and 
-% assumed to be the sum of Stribeck, Coulomb. The
-% sum of the Coulomb and Stribeck frictions at zero velocity is often 
-% referred to as the breakaway friction.
+% Cet embrayage est basé sur le bloc "Rotational Friction",
+% sans frottement visqueux,
+% et dont le taux de frottement de Coulomb peut être ajusté dynamiquement.
+% 
+% Taux :
+%  - 0 : débrayé
+%  - 1 : embrayé (dans les limites du coefficient de frottement)
 %
 % Connections R and C are mechanical rotational conserving ports. 
 % The block positive direction is from port R to port C. This means that if 
@@ -12,9 +14,10 @@ component embrayage < foundation.mechanical.rotational.branch
 % torque from port R to port C.
 
 % Copyright 2005-2008 The MathWorks, Inc.
+% Copyright 2016 Cédrick FAURY
 
 inputs
-    coef = {1, '1'};                     % Coefficient d'embrayage
+    coef = {1, '1'};                     % Taux
 end
 
 parameters
