@@ -1,0 +1,48 @@
+component train_epi
+% Train epicycloidal
+%
+% Le rapport de transmission est le rapport de la vitesse d'entrée 
+% par la vitesse moyenne des sorties
+%
+% The block generates torque in positive direction if a positive torque
+% is applied to the input shaft and the ratio is assigned a positive value.
+
+nodes
+    R = foundation.mechanical.rotational.rotational; % R:right
+    S = foundation.mechanical.rotational.rotational; % S:left
+    C = foundation.mechanical.rotational.rotational; % C:left
+end
+
+parameters
+    ratio = { 2, '1' }; % Rapport du nombre de dents couronne/planetaire
+end
+
+variables
+    t_R = { 0, 'N*m' };    % Input shaft incoming torque
+    t_S = { 0, 'N*m' };   % Output shaft incoming torque Gauche
+    t_C = { 0, 'N*m' };   % Output shaft incoming torque Droite
+end
+
+function setup
+    % Parameter range checking
+    if ratio <= 1
+        pm_error('simscape:GreaterThanOne','Rapport du nombre de dents couronne/planetaire')
+    end
+end
+
+branches
+    t_R : R.t -> *;
+    t_S : S.t -> *;
+    t_C : C.t -> *;
+end
+
+equations
+    %Overall kinematics 
+    (1+ratio)* C.w == S.w + ratio * R.w;
+    
+    %Torque balance
+    t_R == ratio * t_S;
+    0 == t_C + t_S + t_R;     
+end
+
+end
