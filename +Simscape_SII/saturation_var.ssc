@@ -1,0 +1,33 @@
+component saturation
+% PS Saturation :0.75
+% This block imposes upper and lower bounds on the output signal. When 
+% the input signal is within the range specified by the Lower limit and 
+% Upper limit parameters, the input signal passes through unchanged. When 
+% the input signal is outside these bounds, the signal is clipped to the 
+% upper or lower bound.
+%
+% Both the input and the output are physical signal ports.
+
+% Copyright 2005-2008 The MathWorks, Inc.
+
+  inputs
+    I = { 0, '1' }; % :left
+    l = { 1.0, '1' }; % :left  
+  end
+
+  outputs
+    O = { 0, '1' }; % :right
+  end
+
+    
+  equations
+    if I >= abs(l)
+        O == abs(l);
+    elseif I <= -abs(l)
+        O == -abs(l);
+    else
+        O == I;
+    end
+  end
+    
+end

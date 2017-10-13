@@ -1,0 +1,35 @@
+component corde_tendue < foundation.mechanical.translational.branch
+% Corde de longueur L constante,
+% tendue par un effort F
+% Caractéristiques :
+%  - S : section en mm²
+%  - E : module de Young en GPa
+%
+% Connections R and C are mechanical translational conserving ports. 
+% The block positive direction is from port R to port C. This means that
+% the force is positive if it acts in the direction from R to C.
+
+% Copyright 2005-2013 The MathWorks, Inc.
+% Copyright 2016 Cédrick FAURY
+
+
+parameters
+    L = { 1, 'm' };  % Longueur
+    E = { 210, 'Gpa' };  % Module de Young
+    S = { 1, 'mm^2' };  % Section
+end
+
+variables
+    x = { 0, 'm'}; % Deformation
+end
+
+function setup
+   
+end
+
+equations
+    v == 0;
+    f == x * E*S/L;
+end
+
+end
