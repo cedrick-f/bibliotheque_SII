@@ -15,7 +15,7 @@ component corde_tendue < foundation.mechanical.translational.branch
 
 parameters
     L = { 1, 'm' };  % Longueur
-    E = { 210, 'Gpa' };  % Module de Young
+    E = { 210, 'GPa' };  % Module de Young
     S = { 1, 'mm^2' };  % Section
 end
 
