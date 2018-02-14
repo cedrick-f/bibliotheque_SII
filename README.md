@@ -16,7 +16,7 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
      
  ![Bouton Add with Subfolders](/Images/MATLAB_Boutton_AddwithSF.png)
  
-     * Selectionner le dossier de la bibliothèque SII :
+ * Selectionner le dossier de la bibliothèque SII :
      
  ![Search Path](/Images/MATLAB_Path.png)
  
