@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
+>
+<svg width="4.75in" height="3.125in" viewBox="0 0 342 225"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+<title>Fig file converted by fig2lat</title>
+<desc>http://dktools.sourceforge.net/fig2lat.html</desc>
+<defs>
+<style type="text/css"><![CDATA[
+.sD {
+fill: none;
+stroke: #000000;
+stroke-width: 0.9;
+stroke-miterlimit: 20;
+}
+.sC {
+fill: #000000;
+fillrule: evenodd;
+stroke: #000000;
+stroke-width: 0.9;
+stroke-miterlimit: 20;
+}
+.sB {
+fill: none;
+stroke: #000000;
+stroke-width: 0.9;
+}
+.sA {
+fill: none;
+stroke: #000000;
+stroke-width: 0.9;
+stroke-miterlimit: 20;
+}
+.sE {
+fill: none;
+stroke: #FFFFFF;
+stroke-width: 0.9;
+stroke-miterlimit: 20;
+}
+]]></style>
+</defs>
+<polyline
+points="9,108
+79.2,108"
+class="sA"
+/>
+<polyline
+points="265.5,108
+333,108"
+class="sA"
+/>
+<path
+d="M149.4,86.4
+C143.95,91.6183 136.696,94.5311 129.15,94.5311
+C121.604,94.5311 114.35,91.6183 108.9,86.4
+"
+class="sB"
+/>
+<path
+d="M230.4,86.4
+C224.95,91.6183 217.696,94.5311 210.15,94.5311
+C202.604,94.5311 195.35,91.6183 189.9,86.4
+"
+class="sB"
+/>
+<path
+d="M149.4,86.4
+C154.85,81.1817 162.104,78.2689 169.65,78.2689
+C177.196,78.2689 184.45,81.1817 189.9,86.4
+"
+class="sB"
+/>
+<path
+d="M149.4,124.2
+C143.95,129.418 136.696,132.331 129.15,132.331
+C121.604,132.331 114.35,129.418 108.9,124.2
+"
+class="sB"
+/>
+<path
+d="M230.4,124.2
+C224.95,129.418 217.696,132.331 210.15,132.331
+C202.604,132.331 195.35,129.418 189.9,124.2
+"
+class="sB"
+/>
+<path
+d="M149.4,124.2
+C154.85,118.982 162.104,116.069 169.65,116.069
+C177.196,116.069 184.45,118.982 189.9,124.2
+"
+class="sB"
+/>
+<polygon
+points="230.4,86.4
+198,83.7
+203.4,102.6
+230.4,86.4"
+class="sC"
+/>
+<polygon
+points="230.4,124.2
+198,121.5
+203.4,140.4
+230.4,124.2"
+class="sC"
+/>
+<rect
+x="79.2" y="54" width="16.2" height="108"
+class="sD"
+/>
+<rect
+x="249.3" y="54" width="16.2" height="108"
+class="sD"
+/>
+<rect
+x="9" y="1.8" width="324" height="214.44"
+class="sE"
+/>
+</svg>
