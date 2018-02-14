@@ -8,11 +8,11 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
  
  3 - Depuis Matlab, ajouter ce dossier au "path" :
  
-     * Depuis la barre d'outils, cliquer sur **Set Path** :
+ * Depuis la barre d'outils, cliquer sur **Set Path** :
      
  ![Bouton Set Path](/Images/MATLAB_Boutton_Set_path.png)
  
-     * Cliquer sur **Add with Subfolders...**
+ * Cliquer sur **Add with Subfolders...**
      
  ![Bouton Add with Subfolders](/Images/MATLAB_Boutton_AddwithSF.png)
  
@@ -20,7 +20,7 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
      
  ![Search Path](/Images/MATLAB_Path.png)
  
-     * Cliquer sur **Save**.
+ * Cliquer sur **Save**.
  
 ## Sources
 La plupart des blocs de cette bibliothèque sont des créations originales.
