@@ -4,7 +4,7 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
 ## Installation
  1 - Télécharger la bibliothèque en cliquant sur "[Download ZIP](https://github.com/cedrick-f/bibliotheque_SII/archive/master.zip)",
  
- 2 - Dézipper le contenu du zip dans un dossier (par exemple <Mes Documents/MATLAB/>),
+ 2 - Dézipper le contenu du zip dans un dossier (par exemple '<Mes Documents/MATLAB/>'),
  
  3 - Depuis Matlab, ajouter ce dossier au "path" :
  
@@ -30,7 +30,7 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
 
 * La **bibliothèque SII** devrait être en en place :
 
-[Bibliothèque dans le Library Browser](/Images/MATLAB_Bibli_SSI.png)
+![Bibliothèque dans le Browser](/Images/MATLAB_Bibli_SSI.png)
 
 
 ## Sources
