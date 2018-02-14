@@ -24,9 +24,12 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
  
  
 ## Accès à la bibliothèque
-Depuis un modèle Simulink, ouvrir le Library Browser : ![Bouton Library Browser](/Images/MATLAB_Library_Browser.png)
+* Depuis un modèle Simulink, ouvrir le **Library Browser** :
 
-La bibliothèque SII devrait être en en place : 
+![Bouton Library Browser](/Images/MATLAB_Library_Browser.png)
+
+* La **bibliothèque SII** devrait être en en place :
+
 [Bibliothèque dans le Library Browser](/Images/MATLAB_Bibli_SSI.png)
 
 
