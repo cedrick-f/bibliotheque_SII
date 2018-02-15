@@ -1,12 +1,14 @@
-# bibliotheque_SII
+# Bibliotheque SII
 Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sciences Industrielles de l'Ingénieur.
 
 ## Installation
  1 - Télécharger la bibliothèque en cliquant sur "[Download ZIP](https://github.com/cedrick-f/bibliotheque_SII/archive/master.zip)",
  
- 2 - Dézipper le contenu du zip dans un dossier (par exemple `<Mes Documents/MATLAB/>`),
+ 2 - Dézipper le contenu du fichier zip
  
- 3 - Depuis Matlab, ajouter ce dossier au "path" :
+ 3 - Copier le sous-dossier `Bibliotheque_SII` dans un dossier accessible par MATLAB (par exemple dans `Mes Documents/MATLAB/`),
+ 
+ 4 - Depuis Matlab, ajouter ce dossier au "search path" :
  
  * Depuis la barre d'outils, cliquer sur **Set Path** :
      
