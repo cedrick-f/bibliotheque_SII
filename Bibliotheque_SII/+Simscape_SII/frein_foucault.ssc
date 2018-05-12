@@ -1,0 +1,25 @@
+component frein_foucault < foundation.mechanical.rotational.branch
+%Frein à courant de Foucault:2.0
+% Ce bloc représente un frein à courant de Foucault
+% 
+%
+%
+%
+
+    parameters
+        B = { 1, 'T' };             % Intensité du champ magnétique 
+        s = { 1/(3.8e-8), 'S/m'};   % Conductivité electrique du disque
+        e = { 3e-3, 'm'};           % Epaisseur du disque
+        ra = { 20e-3, 'm'};         % Rayon de l'aimant
+        rd = { 120e-3, 'm'};        % Rayon du disque
+    end 
+
+    inputs
+        r = { 0.8, 'm'};            % Distance de l'aimant au centre du disque
+    end
+    
+    equations
+        t == 0.5 * s * e * w * pi * ra^2 * r^2 * B^2 * (1-(ra/rd)^2/(1-(r/rd)^2)^2);
+    end
+
+end

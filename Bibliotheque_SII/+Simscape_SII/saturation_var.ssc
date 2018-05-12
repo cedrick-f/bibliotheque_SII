@@ -1,4 +1,4 @@
-component saturation
+component saturation_var
 % PS Saturation :0.75
 % This block imposes upper and lower bounds on the output signal. When 
 % the input signal is within the range specified by the Lower limit and 
