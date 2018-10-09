@@ -1,9 +1,12 @@
 component frein_foucault < foundation.mechanical.rotational.branch
 %Frein à courant de Foucault:2.0
 % Ce bloc représente un frein à courant de Foucault
-% 
-%
-%
+% Un aimant de forme circulaire (rayon ra)
+% crée un champ magnétique B
+% peut être placé à une distance D de l'axe de rotation
+% d'un disque de conductivité electrique s
+% et de rayon rd
+% R et C sont deux ports mécaniques de rotation
 %
 
     parameters
@@ -15,10 +18,21 @@ component frein_foucault < foundation.mechanical.rotational.branch
     end 
 
     inputs
-        r = { 0.8, 'm'};            % Distance de l'aimant au centre du disque
+        r = { 0.8, 'm'};            % D
+    end
+    
+    function setup
+        % Parameter range checking
+        if rd <= 0
+          error('Le rayon du disque doit être supérieur à 0');
+        end
+        if ra <= 0
+          error('Le rayon de l''aimant doit être supérieur à 0');
+        end
     end
     
     equations
+        assert(r>0)
         t == 0.5 * s * e * w * pi * ra^2 * r^2 * B^2 * (1-(ra/rd)^2/(1-(r/rd)^2)^2);
     end
 

@@ -1,16 +1,26 @@
 component train_epi
 % Train epicycloidal
 %
-% Le rapport de transmission est le rapport de la vitesse d'entrée 
-% par la vitesse moyenne des sorties
+% Le modèle possède trois ports mécaniques de rotation :
+%  * P : planétaire
+%  * C : couronne
+%  * PS : porte satellites
 %
-% The block generates torque in positive direction if a positive torque
-% is applied to the input shaft and the ratio is assigned a positive value.
+% Remarques :
+%  * Le rapport de transmission est le rapport de la vitesse d'entrée 
+%    par la vitesse moyenne des sorties
+%  * Les rôles couronne/planétaire peuvent être inversés en inversant
+%    le rapport du nombre de dents
+%  * La couronne peut devenir une roue en prenant un rapport
+%    nombre de dents de signe opposé
+%
+
 
 nodes
-    R = foundation.mechanical.rotational.rotational; % R:right
-    S = foundation.mechanical.rotational.rotational; % S:left
-    C = foundation.mechanical.rotational.rotational; % C:left
+    R = foundation.mechanical.rotational.rotational; % C:left
+    C = foundation.mechanical.rotational.rotational; % PS:right
+    S = foundation.mechanical.rotational.rotational; % P:right
+    
 end
 
 parameters
