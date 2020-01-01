@@ -13,7 +13,7 @@ component convection_var < foundation.thermal.branch
 % Copyright 2005-2008 The MathWorks, Inc.
 
 inputs
-    heat_tr_coeff = { 20, 'W/(m^2*K)' }; % Heat transfer coefficient
+    heat_tr_coeff = { 20, 'W/(m^2*K)' }; % h
 end
 
 parameters
