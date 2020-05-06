@@ -32,7 +32,7 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
 
 * La **bibliothèque SII** devrait être en en place :
 
-![Bibliothèque dans le Browser](/Images/MATLAB_Bibli_SSI.png)
+![Bibliothèque dans le Browser](/Images/MATLAB_Bibli_SSI.PNG)
  
 Dans le cas contraire, appuyer sur **F5** pour rafraichir...
 
