@@ -19,10 +19,16 @@ component reducteur_rendement_frottement
     parameters
         rapport_transmission = { 10, '1' }; % Rapport de transmission 
         rendement = { 0.8, '1'};            % Rendement 
-        Col_trq = { 1, 'N*m' };             % Couple de frottement (port S)
+        brkwy_trq = { 25, 'N*m' };          % Breakaway friction torque
+        brkwy_vel = { 0.1, 'rad/s' };       % Breakaway friction velocity
+        Col_trq = { 20, 'N*m' };            % Coulomb friction torque
     end
 
-
+    parameters (Access=private)
+    static_scale = sqrt(2*exp(1))*(brkwy_trq-Col_trq);  % Scale factor for static torque
+    static_thr = sqrt(2)*brkwy_vel;                     % Velocity threshold for static torque
+    Col_thr = brkwy_vel/10;                             % Velocity threshold for Coulomb torque
+    end
 
     variables
         t_in = { 0 , 'N*m'}; % Couple d'entrée
@@ -55,11 +61,18 @@ component reducteur_rendement_frottement
         assert(rendement>0)
         assert(rendement<=1)
         assert(Col_trq>=0)
+        assert(Col_trq<=brkwy_trq)
+        assert(brkwy_trq>0)
+        assert(brkwy_vel>0)
         
         if t_in*r.w >= t_out*c.w
-            t_out + sign(c.w)*Col_trq + rapport_transmission * t_in * rendement == 0;
+            t_out + static_scale * (c.w/static_thr*exp(-(c.w/static_thr)^2)) ...
+                               + Col_trq * tanh(c.w/Col_thr) ...
+            + rapport_transmission * t_in * rendement == 0;
         else
-            (t_out + sign(c.w)*Col_trq) * rendement + rapport_transmission * t_in == 0;
+            (t_out + static_scale * (c.w/static_thr*exp(-(c.w/static_thr)^2)) ...
+                                + Col_trq * tanh(c.w/Col_thr)) * rendement ...
+            + rapport_transmission * t_in == 0;
         end
         r.w - rapport_transmission * c.w == 0;
     end

@@ -1,0 +1,65 @@
+component reducteur_rendement_frottement
+%Réducteur avec rendement et frottement:2.0
+% Ce bloc représente un réducteur à rapport de transmission fixe
+% et défini par : r = we/ws
+% 
+% Les connections E et S sont des ports mécaniques de rotation
+% associés respectivement à l'entrée et la sortie du réducteur.
+%
+% Le frottement au sein de ce réducteur est donné par :
+%  * un rendement défini par : n = Ps/Pe
+%  * un frottement de Coulomb défini par un couple Cf appliqué sur le port S
+%
+
+    nodes
+        r = foundation.mechanical.rotational.rotational;    % E:left
+        c = foundation.mechanical.rotational.rotational;    % S:right
+    end
+
+    parameters
+        rapport_transmission = { 10, '1' }; % Rapport de transmission 
+        rendement = { 0.8, '1'};            % Rendement 
+        Col_trq = { 1, 'N*m' };             % Couple de frottement (port S)
+    end
+
+    variables
+        t_in = { 0 , 'N*m'}; % Couple d'entrée
+        t_out = { 0 , 'N*m'};% Couple de sortie
+    end
+
+    function setup
+        %through(t_in, r.t, []);
+        %through(t_out, c.t, []);
+        % Parameter range checking
+        if rendement <= 0 || rendement > 1
+          error('Le rendement doit être compris entre 0% et 100%');
+        end
+        if rapport_transmission == 0
+            pm_error('simscape:NotZero', 'rapport de transmission');
+        end
+        if Col_trq < 0
+            error('Le couple de frottement doit être positif ou nul');
+        end
+    end
+
+    branches
+        t_in  : r.t -> *;
+        t_out : c.t -> *;
+    end
+
+    equations
+        % Parameter range checking
+        assert(rapport_transmission~=0)
+        assert(rendement>0)
+        assert(rendement<=1)
+        assert(Col_trq>=0)
+        
+        if t_in*r.w >= t_out*c.w
+            t_out + sign(c.w)*Col_trq + rapport_transmission * t_in * rendement == 0;
+        else
+            (t_out + sign(c.w)*Col_trq) * rendement + rapport_transmission * t_in == 0;
+        end
+        r.w - rapport_transmission * c.w == 0;
+    end
+
+end
