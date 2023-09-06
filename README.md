@@ -32,14 +32,9 @@ Bibliothèque de composants Matlab/Simulink/Simscape pour l'enseignement des Sci
 
 * La **bibliothèque SII** devrait être en en place :
 
-![Bibliothèque dans le Browser](/Images/MATLAB_Bibli_SSI.png)
-
+![Bibliothèque dans le Browser](/Images/MATLAB_Bibli_SSI.PNG)
+ 
 Dans le cas contraire, appuyer sur **F5** pour rafraichir...
 
 
-## Sources
-La plupart des blocs de cette bibliothèque sont des créations originales.
-
-Sauf :
- * [Soft Real Time](http://www.mathworks.com/matlabcentral/fileexchange/21908-simulink%C2%AE-real-time-execution)
 
